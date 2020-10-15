@@ -54,6 +54,7 @@ namespace ContactManager
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
             #endregion
+            
             // Authorization handlers.
             services.AddScoped<IAuthorizationHandler,
                                   ContactIsOwnerAuthorizationHandler>();
